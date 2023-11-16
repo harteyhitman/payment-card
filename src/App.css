@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins&family=Roboto:wght@900&family=Space+Grotesk&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto';
+}
+#card-container{
+  display: flex;
+   /* flex-direction: column; */
+  /* width: 100%; */
+}
+.white-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 60%;
+}
+.gradient-left{
+  background: url('../src/Assets/bg-main-desktop.png');
+  width: 40%;
+  height: 100vh;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input{
+  width: 300px;
+  height: 40px;
+  padding: 0px 5px;
+  border: 1.5px solid #564C5E;
+  border-radius: 5px;
+  outline: #564C5E;
+  margin-top: 4px;
+  cursor: pointer;
+}
+input:hover{
+  background-color: #452355;
+  color: #fff;
+  border: 2px solid  #7B3381;
+}
+label{
+  font-size: 10px;
+  font-weight: 500;
+  color: #564C5E;
+}
+.date{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+.month-number, .year{
+  width: 70px;
+}
+.number-container{
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 12px;
+}
+.cve{
+  width: 130px;
+}
+.cve-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.number-date{
+  display: flex;
+  flex-direction: column;
+}
+.expiry-container{
+  display: flex;
+  align-items: center;
+}
+button{
+  padding: 14px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #220930;
+  cursor: pointer;
+}
+
+.gradient-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.upper-card{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  width: 300px;
+  height: 170px;
+  border-radius: 10px;
+  color: #fff;
+  background-image: url(../src/Assets/bg-card-front.png);
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.details p{
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.small-details{
+  display: flex;
+  justify-content: space-between;
+}
+.circle{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-logo{
+  border: 1px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+}
+.coloured{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+}
+.lower-card{
+  width: 300px;
+  height: 170px;
+  border-radius: 10px;
+  background-image: url(../src/Assets/bg-card-back.png);
+}
+.card-container{
+  position: relative;
+  left: 200px;
+}
+.lower-card-con{
+  position: relative;
+  left: 50px;
+}
+.lower-card p{
+  color: white;
+  opacity: 0.7;
+  position: relative;
+  bottom: -110px;
+  left: 260px;
+}
+
+@media (max-width: 375px) {
+  #card-container{
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+  .white-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+  }
+  .gradient-left{
+    width: 100%;
+    height: 50vh;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .card-container {
+
+    position: relative;
+    left: 0px;
+    top: 70px;
+}
+.lower-card-con{
+  position: relative;
+  left: 0px;
+}
+.upper-card {
+  width: 250px;
+  height: 150px;
+  position: relative;
+  top: -60px;
+  left: -30px;
+  z-index: 1;
+}
+.lower-card{
+ position: relative;
+ right: -30px;
+  width: 250px;
+  height: 150px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  left: 0px;
+}
+input{
+  width: 270px;
+}
+.cve {
+  width: 135px;
+}
+.month-number, .year {
+  width: 50px;
+}
+.white-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  padding-top: 70px;
+}
+}
