@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins&family=Roboto:wght@900&family=Space+Grotesk&display=swap');
-
+.modal-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
+  height: 400px;
+  background-color: #ffffff;
+  /* border: 1px solid #cccccc; */
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 0px 0px 10px #cccccc; */
+  border-radius: 10px;
+  z-index:1000;
+}
+.modal-container img{
+  width: 50px;
+  height: 50px;
+  background-color: #220930;
+  border-radius: 50%;
+}
+.modal-container h1{
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 12px;
+  font-family: sans-serif;
+}
+.modal-container p{
+  font-family: sans-serif;
+  color: #8D898E;
+  font-family: 400;
+}
 *{
   padding: 0;
   margin: 0;
@@ -87,7 +122,8 @@ label{
   align-items: center;
 }
 button{
-  padding: 14px;
+  width: 300px;
+  height: 45px;
   border-radius: 5px;
   text-align: center;
   color: #fff;
@@ -95,6 +131,19 @@ button{
   outline: none;
   background-color: #220930;
   cursor: pointer;
+  letter-spacing: 5px;
+}
+.continue-btn{
+  width: 270px;
+  height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #220930;
+  cursor: pointer;
+  letter-spacing: 5px;
 }
 
 .gradient-left{
@@ -236,5 +285,41 @@ input{
   background-color: #fff;
   width: 100%;
   padding-top: 70px;
+  padding-bottom: 20px;
+}.modal-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  height: 350px;
+  background-color: #ffffff;
+  /* border: 1px solid #cccccc; */
+  padding: 20px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 0px 0px 10px #cccccc; */
+  border-radius: 10px;
+  z-index:1000;
+}
+.modal-container img{
+  width: 50px;
+  height: 50px;
+  background-color: #220930;
+  border-radius: 50%;
+}
+.modal-container h1{
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 12px;
+  font-family: sans-serif;
+}
+.modal-container p{
+  font-family: sans-serif;
+  color: #8D898E;
+  font-family: 400;
 }
 }
