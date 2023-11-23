@@ -145,7 +145,6 @@ button{
   cursor: pointer;
   letter-spacing: 5px;
 }
-
 .gradient-left{
   display: flex;
   flex-direction: column;
@@ -217,7 +216,7 @@ button{
   left: 260px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 505px) {
   #card-container{
     display: flex;
      flex-direction: column;
