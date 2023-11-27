@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useRef, useState } from "react"
 import { useContext, } from 'react'
 import UserContext from '../Context/UserContext'
 import Modal from "./Modal"
@@ -15,6 +15,7 @@ const CardInfo = () => {
     // Function to toggle the modal visibility
     const toggleModal = () => {
         setModalVisible(!isModalVisible);
+        inputRef.current.focus();
     };
 
     const { input, setInputs,
@@ -36,6 +37,8 @@ const CardInfo = () => {
         setCvc(e.target.value)
     }
 
+    const inputRef = useRef()
+
     return (
 
         <div>
@@ -48,6 +51,7 @@ const CardInfo = () => {
                         placeholder="cardholder"
                         onChange={handleInputs}
                         value={input}
+                        ref={inputRef}
                     />
                 </div>
 
@@ -57,6 +61,7 @@ const CardInfo = () => {
                         placeholder="card number"
                         onChange={CardNUmberset}
                         value={cardNumbers}
+                        ref={inputRef}
                     />
                 </div>
 
@@ -69,12 +74,12 @@ const CardInfo = () => {
                             <input type="number"
                                 className="month-number"
                                 placeholder="MM"
-
+                                ref={inputRef}
                             />
                             <input type="year"
                                 className="year"
                                 placeholder="YY"
-
+                                ref={inputRef}
                             />
                         </div>
                     </div>
@@ -86,6 +91,7 @@ const CardInfo = () => {
                             placeholder="e.g 123"
                             onChange={handleCvc}
                             value={cvc}
+                            
                         />
                     </div>
                 </div>
